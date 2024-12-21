@@ -1,0 +1,21 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "resource-type": ["script"],
+            "if-domain": ["*doubleclick.net", "*google-analytics.com", "*adnxs.com", "*iosgods.com", "*youtube.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".ad, .advertisement, div[class*='ad-'], div[id*='ad-']"
+        },
+        "trigger": {
+            "url-filter": ".*"
+        }
+    }
+]

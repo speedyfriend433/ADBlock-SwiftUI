@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EF0F6E62D16CAA200A44ABB /* ADBlockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF0F6E52D16CAA200A44ABB /* ADBlockApp.swift */; };
+		8EF0F6E82D16CAA200A44ABB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF0F6E72D16CAA200A44ABB /* ContentView.swift */; };
+		8EF0F6EA2D16CAA400A44ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF0F6E92D16CAA400A44ABB /* Assets.xcassets */; };
+		8EF0F6ED2D16CAA400A44ABB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF0F6EC2D16CAA400A44ABB /* Preview Assets.xcassets */; };
+		8EF0F6F72D16CAA400A44ABB /* ADBlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF0F6F62D16CAA400A44ABB /* ADBlockTests.swift */; };
+		8EF0F7012D16CAA400A44ABB /* ADBlockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF0F7002D16CAA400A44ABB /* ADBlockUITests.swift */; };
+		8EF0F7032D16CAA400A44ABB /* ADBlockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF0F7022D16CAA400A44ABB /* ADBlockUITestsLaunchTests.swift */; };
+		8EF0F7162D16CAFF00A44ABB /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EF0F7152D16CAFF00A44ABB /* blockerList.json */; };
+		8EF0F7182D16CAFF00A44ABB /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF0F7172D16CAFF00A44ABB /* ContentBlockerRequestHandler.swift */; };
+		8EF0F71C2D16CB0000A44ABB /* ContentBlockerExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8EF0F7132D16CAFF00A44ABB /* ContentBlockerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8EF0F7412D16CD1000A44ABB /* ContentBlocker.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8EF0F7382D16CD0F00A44ABB /* ContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EF0F6F32D16CAA400A44ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EF0F6DA2D16CAA200A44ABB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EF0F6E12D16CAA200A44ABB;
+			remoteInfo = ADBlock;
+		};
+		8EF0F6FD2D16CAA400A44ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EF0F6DA2D16CAA200A44ABB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EF0F6E12D16CAA200A44ABB;
+			remoteInfo = ADBlock;
+		};
+		8EF0F71A2D16CB0000A44ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EF0F6DA2D16CAA200A44ABB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EF0F7122D16CAFF00A44ABB;
+			remoteInfo = ContentBlockerExtension;
+		};
+		8EF0F73F2D16CD1000A44ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EF0F6DA2D16CAA200A44ABB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EF0F7372D16CD0F00A44ABB;
+			remoteInfo = ContentBlocker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8EF0F7202D16CB0000A44ABB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8EF0F71C2D16CB0000A44ABB /* ContentBlockerExtension.appex in Embed Foundation Extensions */,
+				8EF0F7412D16CD1000A44ABB /* ContentBlocker.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8EF0F6E22D16CAA200A44ABB /* ADBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EF0F6E52D16CAA200A44ABB /* ADBlockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADBlockApp.swift; sourceTree = "<group>"; };
+		8EF0F6E72D16CAA200A44ABB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8EF0F6E92D16CAA400A44ABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EF0F6EC2D16CAA400A44ABB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8EF0F6F22D16CAA400A44ABB /* ADBlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADBlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EF0F6F62D16CAA400A44ABB /* ADBlockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADBlockTests.swift; sourceTree = "<group>"; };
+		8EF0F6FC2D16CAA400A44ABB /* ADBlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADBlockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EF0F7002D16CAA400A44ABB /* ADBlockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADBlockUITests.swift; sourceTree = "<group>"; };
+		8EF0F7022D16CAA400A44ABB /* ADBlockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADBlockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8EF0F7132D16CAFF00A44ABB /* ContentBlockerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentBlockerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EF0F7152D16CAFF00A44ABB /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		8EF0F7172D16CAFF00A44ABB /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		8EF0F7192D16CAFF00A44ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EF0F7382D16CD0F00A44ABB /* ContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EF0F7452D16CDA000A44ABB /* ADBlock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ADBlock.entitlements; sourceTree = "<group>"; };
+		8EF0F7462D16CE5F00A44ABB /* ContentBlockerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentBlockerExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EF0F6DF2D16CAA200A44ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF0F6EF2D16CAA400A44ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF0F6F92D16CAA400A44ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF0F7102D16CAFF00A44ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF0F7352D16CD0F00A44ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EF0F6D92D16CAA200A44ABB = {
+			isa = PBXGroup;
+			children = (
+				8EF0F6E42D16CAA200A44ABB /* ADBlock */,
+				8EF0F6F52D16CAA400A44ABB /* ADBlockTests */,
+				8EF0F6FF2D16CAA400A44ABB /* ADBlockUITests */,
+				8EF0F7142D16CAFF00A44ABB /* ContentBlockerExtension */,
+				8EF0F6E32D16CAA200A44ABB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EF0F6E32D16CAA200A44ABB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EF0F6E22D16CAA200A44ABB /* ADBlock.app */,
+				8EF0F6F22D16CAA400A44ABB /* ADBlockTests.xctest */,
+				8EF0F6FC2D16CAA400A44ABB /* ADBlockUITests.xctest */,
+				8EF0F7132D16CAFF00A44ABB /* ContentBlockerExtension.appex */,
+				8EF0F7382D16CD0F00A44ABB /* ContentBlocker.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EF0F6E42D16CAA200A44ABB /* ADBlock */ = {
+			isa = PBXGroup;
+			children = (
+				8EF0F7452D16CDA000A44ABB /* ADBlock.entitlements */,
+				8EF0F6E52D16CAA200A44ABB /* ADBlockApp.swift */,
+				8EF0F6E72D16CAA200A44ABB /* ContentView.swift */,
+				8EF0F6E92D16CAA400A44ABB /* Assets.xcassets */,
+				8EF0F6EB2D16CAA400A44ABB /* Preview Content */,
+			);
+			path = ADBlock;
+			sourceTree = "<group>";
+		};
+		8EF0F6EB2D16CAA400A44ABB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8EF0F6EC2D16CAA400A44ABB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8EF0F6F52D16CAA400A44ABB /* ADBlockTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EF0F6F62D16CAA400A44ABB /* ADBlockTests.swift */,
+			);
+			path = ADBlockTests;
+			sourceTree = "<group>";
+		};
+		8EF0F6FF2D16CAA400A44ABB /* ADBlockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8EF0F7002D16CAA400A44ABB /* ADBlockUITests.swift */,
+				8EF0F7022D16CAA400A44ABB /* ADBlockUITestsLaunchTests.swift */,
+			);
+			path = ADBlockUITests;
+			sourceTree = "<group>";
+		};
+		8EF0F7142D16CAFF00A44ABB /* ContentBlockerExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8EF0F7462D16CE5F00A44ABB /* ContentBlockerExtension.entitlements */,
+				8EF0F7152D16CAFF00A44ABB /* blockerList.json */,
+				8EF0F7172D16CAFF00A44ABB /* ContentBlockerRequestHandler.swift */,
+				8EF0F7192D16CAFF00A44ABB /* Info.plist */,
+			);
+			path = ContentBlockerExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EF0F6E12D16CAA200A44ABB /* ADBlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EF0F7062D16CAA400A44ABB /* Build configuration list for PBXNativeTarget "ADBlock" */;
+			buildPhases = (
+				8EF0F6DE2D16CAA200A44ABB /* Sources */,
+				8EF0F6DF2D16CAA200A44ABB /* Frameworks */,
+				8EF0F6E02D16CAA200A44ABB /* Resources */,
+				8EF0F7202D16CB0000A44ABB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EF0F71B2D16CB0000A44ABB /* PBXTargetDependency */,
+				8EF0F7402D16CD1000A44ABB /* PBXTargetDependency */,
+			);
+			name = ADBlock;
+			productName = ADBlock;
+			productReference = 8EF0F6E22D16CAA200A44ABB /* ADBlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EF0F6F12D16CAA400A44ABB /* ADBlockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EF0F7092D16CAA400A44ABB /* Build configuration list for PBXNativeTarget "ADBlockTests" */;
+			buildPhases = (
+				8EF0F6EE2D16CAA400A44ABB /* Sources */,
+				8EF0F6EF2D16CAA400A44ABB /* Frameworks */,
+				8EF0F6F02D16CAA400A44ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EF0F6F42D16CAA400A44ABB /* PBXTargetDependency */,
+			);
+			name = ADBlockTests;
+			productName = ADBlockTests;
+			productReference = 8EF0F6F22D16CAA400A44ABB /* ADBlockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8EF0F6FB2D16CAA400A44ABB /* ADBlockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EF0F70C2D16CAA400A44ABB /* Build configuration list for PBXNativeTarget "ADBlockUITests" */;
+			buildPhases = (
+				8EF0F6F82D16CAA400A44ABB /* Sources */,
+				8EF0F6F92D16CAA400A44ABB /* Frameworks */,
+				8EF0F6FA2D16CAA400A44ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EF0F6FE2D16CAA400A44ABB /* PBXTargetDependency */,
+			);
+			name = ADBlockUITests;
+			productName = ADBlockUITests;
+			productReference = 8EF0F6FC2D16CAA400A44ABB /* ADBlockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8EF0F7122D16CAFF00A44ABB /* ContentBlockerExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EF0F71D2D16CB0000A44ABB /* Build configuration list for PBXNativeTarget "ContentBlockerExtension" */;
+			buildPhases = (
+				8EF0F70F2D16CAFF00A44ABB /* Sources */,
+				8EF0F7102D16CAFF00A44ABB /* Frameworks */,
+				8EF0F7112D16CAFF00A44ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContentBlockerExtension;
+			productName = ContentBlockerExtension;
+			productReference = 8EF0F7132D16CAFF00A44ABB /* ContentBlockerExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8EF0F7372D16CD0F00A44ABB /* ContentBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EF0F7422D16CD1000A44ABB /* Build configuration list for PBXNativeTarget "ContentBlocker" */;
+			buildPhases = (
+				8EF0F7342D16CD0F00A44ABB /* Sources */,
+				8EF0F7352D16CD0F00A44ABB /* Frameworks */,
+				8EF0F7362D16CD0F00A44ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContentBlocker;
+			productName = ContentBlocker;
+			productReference = 8EF0F7382D16CD0F00A44ABB /* ContentBlocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EF0F6DA2D16CAA200A44ABB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					8EF0F6E12D16CAA200A44ABB = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					8EF0F6F12D16CAA400A44ABB = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 8EF0F6E12D16CAA200A44ABB;
+					};
+					8EF0F6FB2D16CAA400A44ABB = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 8EF0F6E12D16CAA200A44ABB;
+					};
+					8EF0F7122D16CAFF00A44ABB = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					8EF0F7372D16CD0F00A44ABB = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 8EF0F6DD2D16CAA200A44ABB /* Build configuration list for PBXProject "ADBlock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EF0F6D92D16CAA200A44ABB;
+			productRefGroup = 8EF0F6E32D16CAA200A44ABB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EF0F6E12D16CAA200A44ABB /* ADBlock */,
+				8EF0F6F12D16CAA400A44ABB /* ADBlockTests */,
+				8EF0F6FB2D16CAA400A44ABB /* ADBlockUITests */,
+				8EF0F7122D16CAFF00A44ABB /* ContentBlockerExtension */,
+				8EF0F7372D16CD0F00A44ABB /* ContentBlocker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EF0F6E02D16CAA200A44ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF0F6ED2D16CAA400A44ABB /* Preview Assets.xcassets in Resources */,
+				8EF0F6EA2D16CAA400A44ABB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF0F6F02D16CAA400A44ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF0F6FA2D16CAA400A44ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF0F7112D16CAFF00A44ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF0F7162D16CAFF00A44ABB /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF0F7362D16CD0F00A44ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EF0F6DE2D16CAA200A44ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF0F6E82D16CAA200A44ABB /* ContentView.swift in Sources */,
+				8EF0F6E62D16CAA200A44ABB /* ADBlockApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF0F6EE2D16CAA400A44ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF0F6F72D16CAA400A44ABB /* ADBlockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF0F6F82D16CAA400A44ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF0F7012D16CAA400A44ABB /* ADBlockUITests.swift in Sources */,
+				8EF0F7032D16CAA400A44ABB /* ADBlockUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF0F70F2D16CAFF00A44ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF0F7182D16CAFF00A44ABB /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF0F7342D16CD0F00A44ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EF0F6F42D16CAA400A44ABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EF0F6E12D16CAA200A44ABB /* ADBlock */;
+			targetProxy = 8EF0F6F32D16CAA400A44ABB /* PBXContainerItemProxy */;
+		};
+		8EF0F6FE2D16CAA400A44ABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EF0F6E12D16CAA200A44ABB /* ADBlock */;
+			targetProxy = 8EF0F6FD2D16CAA400A44ABB /* PBXContainerItemProxy */;
+		};
+		8EF0F71B2D16CB0000A44ABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EF0F7122D16CAFF00A44ABB /* ContentBlockerExtension */;
+			targetProxy = 8EF0F71A2D16CB0000A44ABB /* PBXContainerItemProxy */;
+		};
+		8EF0F7402D16CD1000A44ABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EF0F7372D16CD0F00A44ABB /* ContentBlocker */;
+			targetProxy = 8EF0F73F2D16CD1000A44ABB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8EF0F7042D16CAA400A44ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EF0F7052D16CAA400A44ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EF0F7072D16CAA400A44ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ADBlock/ADBlock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ADBlock/Preview Content\"";
+				DEVELOPMENT_TEAM = 8J7AVU8UN6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedy67.ADBlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EF0F7082D16CAA400A44ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ADBlock/ADBlock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ADBlock/Preview Content\"";
+				DEVELOPMENT_TEAM = 8J7AVU8UN6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedy67.ADBlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8EF0F70A2D16CAA400A44ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 625H9BYZCZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedy67.ADBlockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ADBlock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ADBlock";
+			};
+			name = Debug;
+		};
+		8EF0F70B2D16CAA400A44ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 625H9BYZCZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedy67.ADBlockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ADBlock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ADBlock";
+			};
+			name = Release;
+		};
+		8EF0F70D2D16CAA400A44ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 625H9BYZCZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedy67.ADBlockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ADBlock;
+			};
+			name = Debug;
+		};
+		8EF0F70E2D16CAA400A44ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 625H9BYZCZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedy67.ADBlockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ADBlock;
+			};
+			name = Release;
+		};
+		8EF0F71E2D16CB0000A44ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ContentBlockerExtension/ContentBlockerExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8J7AVU8UN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContentBlockerExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ContentBlockerExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedy67.ADBlock.ContentBlockerExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EF0F71F2D16CB0000A44ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ContentBlockerExtension/ContentBlockerExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8J7AVU8UN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContentBlockerExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ContentBlockerExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedy67.ADBlock.ContentBlockerExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8EF0F7432D16CD1000A44ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8J7AVU8UN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContentBlocker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ContentBlocker;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedy67.ADBlock.ContentBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EF0F7442D16CD1000A44ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8J7AVU8UN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContentBlocker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ContentBlocker;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.speedy67.ADBlock.ContentBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EF0F6DD2D16CAA200A44ABB /* Build configuration list for PBXProject "ADBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EF0F7042D16CAA400A44ABB /* Debug */,
+				8EF0F7052D16CAA400A44ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EF0F7062D16CAA400A44ABB /* Build configuration list for PBXNativeTarget "ADBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EF0F7072D16CAA400A44ABB /* Debug */,
+				8EF0F7082D16CAA400A44ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EF0F7092D16CAA400A44ABB /* Build configuration list for PBXNativeTarget "ADBlockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EF0F70A2D16CAA400A44ABB /* Debug */,
+				8EF0F70B2D16CAA400A44ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EF0F70C2D16CAA400A44ABB /* Build configuration list for PBXNativeTarget "ADBlockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EF0F70D2D16CAA400A44ABB /* Debug */,
+				8EF0F70E2D16CAA400A44ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EF0F71D2D16CB0000A44ABB /* Build configuration list for PBXNativeTarget "ContentBlockerExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EF0F71E2D16CB0000A44ABB /* Debug */,
+				8EF0F71F2D16CB0000A44ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EF0F7422D16CD1000A44ABB /* Build configuration list for PBXNativeTarget "ContentBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EF0F7432D16CD1000A44ABB /* Debug */,
+				8EF0F7442D16CD1000A44ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EF0F6DA2D16CAA200A44ABB /* Project object */;
+}
